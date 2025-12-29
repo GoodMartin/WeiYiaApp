@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Employee, Prize, WinnerRecord } from '../types';
-import { generateId, downloadCSV } from '../utils';
+import { Employee, Prize, WinnerRecord } from '../types.ts';
+import { generateId, downloadCSV } from '../utils.ts';
 import { Gift, Play, Settings, RotateCcw, Download, Trophy } from 'lucide-react';
 
 interface LuckyDrawViewProps {
@@ -24,7 +24,7 @@ const LuckyDrawView: React.FC<LuckyDrawViewProps> = ({
   const [allowRepeatWin, setAllowRepeatWin] = useState(false);
   const [drawCount, setDrawCount] = useState(1); // How many to draw at once
 
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
 
   // Ensure current prize is selected
   useEffect(() => {

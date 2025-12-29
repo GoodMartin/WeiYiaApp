@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Employee, Table } from '../types';
-import { generateId } from '../utils';
+import { Employee, Table } from '../types.ts';
+import { generateId } from '../utils.ts';
 import { Users, Shuffle, Briefcase, RefreshCw } from 'lucide-react';
 
 interface TableViewProps {

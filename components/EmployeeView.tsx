@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { Employee } from '../types';
-import { generateId, parseCSV } from '../utils';
+import { Employee } from '../types.ts';
+import { generateId, parseCSV } from '../utils.ts';
 import { Upload, Trash2, Plus, Search, FileDown } from 'lucide-react';
 
 interface EmployeeViewProps {

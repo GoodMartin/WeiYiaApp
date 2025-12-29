@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import EmployeeView from './components/EmployeeView';
-import TableView from './components/TableView';
-import LuckyDrawView from './components/LuckyDrawView';
-import { Employee, Prize, Table, WinnerRecord, LOCAL_STORAGE_KEY, AppState } from './types';
+import EmployeeView from './components/EmployeeView.tsx';
+import TableView from './components/TableView.tsx';
+import LuckyDrawView from './components/LuckyDrawView.tsx';
+import { Employee, Prize, Table, WinnerRecord, LOCAL_STORAGE_KEY, AppState } from './types.ts';
 import { Users, Grid, Gift, PartyPopper } from 'lucide-react';
 
 const App: React.FC = () => {

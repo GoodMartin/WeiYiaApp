@@ -1,4 +1,4 @@
-import { Employee } from './types';
+import { Employee } from './types.ts';
 
 // Generate a random ID
 export const generateId = (): string => {
